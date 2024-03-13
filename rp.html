@@ -6,11 +6,24 @@
     <title>Document</title>
 </head>
 <body>
-    <a href="https://www.w3schools.com/html/html_basic.asp">VISIT HERE</a>
+<!-- MULTIPLE WAYS TO CREATE HYPERLINKS -->
+    
+    <!-- <a href="https://www.w3schools.com/html/html_basic.asp">VISIT HERE</a> -->
 
-    <button onclick="window.location.href='https://www.w3schools.com/html/html_basic.asp' ">click here</button>
+    <!-- <button onclick="window.location.href='https://www.w3schools.com/html/html_basic.asp' ">click here</button> -->
 
     <!-- <button onclick="window.location.href='https://www.example.com'">Visit Example Website</button> -->
+    <script>
+        const link = document.createElement('a');
+
+
+        link.href = 'https://github.com/anujyadav-lab/HTML';
+
+        link.textContent = 'visit here narpat';
+         
+        document.body.appendChild(link)
+
+    </script>
 
 </body>
 </html>
